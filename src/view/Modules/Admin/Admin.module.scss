@@ -1,0 +1,27 @@
+@import '@assets/styles/mixins/mixins.scss';
+
+.adminText {
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  margin-top: 16px;
+}
+
+.adminForm {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  gap: 20px;
+  min-height: 70px;
+
+  &Row {
+    min-width: calc((100%) / 3);
+    flex-basis: calc((100%) / 3);
+  }
+}
+
+.formAction {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

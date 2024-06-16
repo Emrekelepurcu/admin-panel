@@ -1,0 +1,11 @@
+.mainPageBreadcrumb {
+  display: flex;
+  gap: 5px;
+  color: var(--color-disabled);
+  margin-bottom: 10px;
+
+  &Active {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+  }
+}

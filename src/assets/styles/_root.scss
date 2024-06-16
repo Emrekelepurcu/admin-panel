@@ -1,0 +1,33 @@
+@import '_variables';
+
+:root {
+  // COLORS
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-dark-secondary: #{$color-dark-secondary};
+  --color-darker-secondary: #{$color-darker-secondary};
+  --color-light-blue: #{$color-light-blue};
+  --color-white: #{$color-white};
+  --color-success: #{$color-success};
+  --color-danger: #{$color-danger};
+  --color-grey: #{$color-grey};
+  --color-light-grey: #{$color-light-grey};
+  --color-dark-grey: #{$color-dark-grey};
+  --color-disabled: #{$color-disabled};
+  --color-canvas: #{$color-canvas};
+  --color-blue-500: #{$color-blue-500};
+  // FONT SIZES
+  --font-size-sm: #{$font-size-sm};
+  --font-size-md: #{$font-size-md};
+  --font-size-lg: #{$font-size-lg};
+  --font-size-xl: #{$font-size-xl};
+  // FONT WEIGHTS
+  --font-weight-normal: #{$font-weight-normal};
+  --font-weight-semibold: #{$font-weight-semibold};
+  --font-weight-bold: #{$font-weight-bold};
+  --font-weight-bolder: #{$font-weight-bolder};
+  // BORDER RADIUS
+  --border-radius-small: #{$border-radius-small};
+  --border-radius: #{$border-radius};
+  --border-radius-circle: #{$border-radius-circle};
+}

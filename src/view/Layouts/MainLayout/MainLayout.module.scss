@@ -1,0 +1,16 @@
+.mainPageLayout {
+  display: flex;
+
+  &Container {
+    padding: 60px;
+  }
+
+  &Sidebar {
+    flex-shrink: 0;
+  }
+
+  &Notification {
+    margin-bottom: 10px;
+    min-height: 46px;
+  }
+}

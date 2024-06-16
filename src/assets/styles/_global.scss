@@ -1,0 +1,104 @@
+@import './variables/main';
+
+@each $display_name in $displays {
+  .d-#{$display_name} {
+    display: $display_name !important;
+  }
+}
+
+@each $direction_name in $direction {
+  .f-direction-#{$direction_name} {
+    flex-direction: $direction_name !important;
+  }
+}
+
+@each $justify_name in $justify-contents {
+  .justify-#{$justify_name} {
+    justify-content: $justify_name !important;
+  }
+}
+
+@each $align_name in $align-contents {
+  .align-#{$align_name} {
+    align-items: $align_name !important;
+  }
+}
+
+@each $i in $margins {
+  $size: #{$i}px !important;
+
+  .m#{$i} {
+    margin: $size;
+  }
+
+  .m-left-#{$i} {
+    margin-left: $size;
+  }
+
+  .m-right-#{$i} {
+    margin-right: $size;
+  }
+
+  .m-top-#{$i} {
+    margin-top: $size;
+  }
+
+  .m-bottom-#{$i} {
+    margin-bottom: $size;
+  }
+}
+
+@each $i in $paddings {
+  $size: #{$i}px !important;
+
+  .p#{$i} {
+    padding: $size;
+  }
+
+  .p-left-#{$i} {
+    padding-left: $size;
+  }
+
+  .p-right-#{$i} {
+    padding-right: $size;
+  }
+
+  .p-top-#{$i} {
+    padding-top: $size;
+  }
+
+  .p-bottom-#{$i} {
+    padding-bottom: $size;
+  }
+}
+
+@each $size in $font-sizes {
+  $key: nth($size, 1);
+  $value: nth($size, 2);
+
+  .font-size-#{$key} {
+    font-size: $value;
+  }
+}
+
+@each $weight in $font-weights {
+  $key: nth($weight, 1);
+  $value: nth($weight, 2);
+
+  .font-weight-#{$key} {
+    font-weight: $value;
+  }
+}
+
+@each $colorName in $colors {
+  $key: nth($colorName, 1);
+  $value: nth($colorName, 2);
+
+  .color-#{$key} {
+    color: $value;
+  }
+
+  .bg-color-#{$key} {
+    background: $value;
+  }
+}
