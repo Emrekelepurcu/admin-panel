@@ -8,7 +8,7 @@ export const ButtonElement = styled.button`
   cursor: pointer;
   border: none;
   padding: 8px;
-  border-radius: var(--border-radius-small);
+  border-radius: 10px;
 
   &:disabled {
     cursor: not-allowed;
@@ -25,15 +25,7 @@ const getTypeStyle = (type) => {
     case TYPE.primary:
       return css`
         color: var(--color-white);
-        background-color: var(--color-secondary);
-
-        &:hover {
-          background-color: var(--color-dark-secondary);
-        }
-
-        &:active {
-          background-color: var(--color-darker-secondary);
-        }
+        background-color: #000;
       `
     case TYPE.secondary:
       return css`
@@ -73,8 +65,8 @@ const getSizeStyle = (size) => {
     default:
       return css`
         font-size: var(--font-size-md);
-        height: 41px;
-        min-width: 97px;
+        height: 51px;
+        min-width: 104px;
       `
   }
 }

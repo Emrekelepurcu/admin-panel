@@ -8,6 +8,7 @@ const port = 8070
 
 app.use(cors())
 app.use(express.static('public'))
+app.use('/images', express.static('images'))
 
 ssr({ app })
 

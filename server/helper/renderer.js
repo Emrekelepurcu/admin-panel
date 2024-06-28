@@ -26,7 +26,7 @@ export default async (req, res, store) => {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
       </head>
       <body>
-        <div id="root">${content}</div>
+        <div id="root" style="height: 100vh">${content}</div>
         <script>
           window.INITIAL_STATE = ${serialize(store.getState())}
         </script>

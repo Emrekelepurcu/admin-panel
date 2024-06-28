@@ -71,7 +71,7 @@ const getSizeStyle = (size) => {
       `
     default:
       return css`
-        height: 41px;
+        height: 60px;
         width: 100%;
         max-width: 100%;
       `
